@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="765e30b3-5a3b-4171-a576-a6a533aa77c6" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\apache-maven-3.9.6" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2gk2Pp2JsdlYLBQ7dfg35uGLEVE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.OauthAuthorizationServerApplication.executor": "Run",
+    "Application.OauthResourceServerApplication.executor": "Run",
+    "Application.SpringSecurityClientApplication.executor": "Run",
+    "Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication.executor": "Run",
+    "Application.com.Javier.client.SpringSecurityClientApplication.executor": "Run",
+    "Application.com.Javier.oauthserver.OauthAuthorizationServerApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springbootlatihan",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.com.Javier.client.SpringSecurityClientApplication">
+    <configuration name="OauthResourceServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dailycodebuffer.Oauthresourceserver.OauthResourceServerApplication" />
+      <module name="Oauth-resource-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dailycodebuffer.Oauthresourceserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dailycodebuffer.client.SpringSecurityClientApplication" />
+      <module name="spring-security-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dailycodebuffer.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.Javier.Oauthresourceserver.OauthResourceServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Javier.Oauthresourceserver.OauthResourceServerApplication" />
+      <module name="Oauth-resource-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Javier.Oauthresourceserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.Javier.client.SpringSecurityClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Javier.client.SpringSecurityClientApplication" />
+      <module name="spring-security-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Javier.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.Javier.oauthserver.OauthAuthorizationServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Javier.oauthserver.OauthAuthorizationServerApplication" />
+      <module name="Oauth-authorization-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Javier.oauthserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring-security-tutorial-main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring-security-tutorial-main" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.Javier.client.SpringSecurityClientApplication" />
+        <item itemvalue="Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication" />
+        <item itemvalue="Application.com.Javier.oauthserver.OauthAuthorizationServerApplication" />
+        <item itemvalue="Application.SpringSecurityClientApplication" />
+        <item itemvalue="Application.OauthResourceServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="765e30b3-5a3b-4171-a576-a6a533aa77c6" name="Changes" comment="" />
+      <created>1716227236058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716227236058</updated>
+    </task>
+    <servers />
+  </component>
+</project>
