@@ -4,17 +4,21 @@ import com.Javier.client.entity.User;
 import com.Javier.client.entity.VerificationToken;
 import com.Javier.client.event.RegistrationCompleteEvent;
 import com.Javier.client.exception.RegisterException;
-import com.Javier.client.model.PasswordModel;
-import com.Javier.client.model.UserModel;
+import com.Javier.client.model.*;
 import com.Javier.client.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @RestController
 @Slf4j
@@ -26,20 +30,66 @@ public class RegistrationController {
     @Autowired
     private ApplicationEventPublisher publisher;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @PostMapping("/register")
-    public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request) {
+    public ResponseModel registerUser(@RequestBody UserModel userModel, final HttpServletRequest request) {
         try {
+            userModel.setDeleted(false);
             User user = userService.registerUser(userModel);
             publisher.publishEvent(new RegistrationCompleteEvent(
                     user,
                     applicationUrl(request)
             ));
-            return "Success";
+            ResponseModel response = new ResponseModel();
+            response.setResponseCode(200);
+            response.setResponseMessage("success");
+            response.setResponseObj(userModel);
+            response.setUsers(null);
+            return response;
         } catch (RegisterException e) {
-            return e.getMessage();
+            throw e;
         }
     }
+    @PostMapping("/getData")
+    public ResponseModel getData(@RequestBody UserModel userModel) {
+        List<UserModel> users = userService.getData(userModel);
+        ResponseModel response = new ResponseModel();
+        response.setResponseCode(200);
+        response.setResponseMessage("success");
+        response.setResponseObj(userModel);
+        response.setUsers(users);
+        return response;
+    }
 
+    @PostMapping("/getActivities")
+    public ResponseEntity<List<ActivityModel>> getActivities(@RequestBody UserModel userModel) {
+        List<ActivityModel> activities = userService.getActivities(userModel);
+        return ResponseEntity.ok().body(activities);
+    }
+
+    @PostMapping("/delete")
+    public ResponseEntity<ResponseModel> deleteUser(@RequestBody LoginModel deleteRequest) {
+        User user = userService.findUserByEmail(deleteRequest.getEmail());
+        if (user == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(new ResponseModel(401, "Invalid email", null, null));
+        }
+        if (user.isDeleted()) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(new ResponseModel(401, "User account is already deleted", null, null));
+        }
+
+        // cek password
+        if (!passwordEncoder.matches(deleteRequest.getPassword(), user.getPassword())) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(new ResponseModel(401, "Invalid password", null, null));
+        }
+        userService.deleteUser(user);
+        return ResponseEntity.ok()
+                .body(new ResponseModel(200, "User deleted successfully", null, null));
+    }
 
     @GetMapping("/verifyRegistration")
     public String verifyRegistration(@RequestParam("token") String token) {

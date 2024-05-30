@@ -3,7 +3,8 @@ package com.Javier.client.service;
 import com.Javier.client.entity.User;
 import com.Javier.client.entity.VerificationToken;
 import com.Javier.client.model.UserModel;
-
+import com.Javier.client.model.ActivityModel;
+import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
@@ -26,4 +27,12 @@ public interface UserService {
     void changePassword(User user, String newPassword);
 
     boolean checkIfValidOldPassword(User user, String oldPassword);
+
+    List<UserModel> getData(UserModel userModel);
+
+    List<ActivityModel> getActivities(UserModel userModel);
+
+    void recordActivity(String activityName, User user);
+
+    void deleteUser(User user);
 }

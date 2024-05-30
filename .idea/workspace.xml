@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="765e30b3-5a3b-4171-a576-a6a533aa77c6" name="Changes" comment="" />
+    <list default="true" id="765e30b3-5a3b-4171-a576-a6a533aa77c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/exception/InvalidPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/handler/UserServiceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/model/ActivityModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/model/LoginModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/repository/ActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/Javier/client/service/UserServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +27,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -37,54 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.OauthAuthorizationServerApplication.executor": "Run",
-    "Application.OauthResourceServerApplication.executor": "Run",
-    "Application.SpringSecurityClientApplication.executor": "Run",
-    "Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication.executor": "Run",
-    "Application.com.Javier.client.SpringSecurityClientApplication.executor": "Run",
-    "Application.com.Javier.oauthserver.OauthAuthorizationServerApplication.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springbootlatihan",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pathVariables"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.OauthAuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OauthResourceServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpringSecurityClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.Javier.client.SpringSecurityClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.Javier.oauthserver.OauthAuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springbootlatihan&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.com.Javier.client.SpringSecurityClientApplication">
-    <configuration name="OauthResourceServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dailycodebuffer.Oauthresourceserver.OauthResourceServerApplication" />
-      <module name="Oauth-resource-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dailycodebuffer.Oauthresourceserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringSecurityClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dailycodebuffer.client.SpringSecurityClientApplication" />
-      <module name="spring-security-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dailycodebuffer.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.Javier.Oauthresourceserver.OauthResourceServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Javier.Oauthresourceserver.OauthResourceServerApplication" />
       <module name="Oauth-resource-server" />
@@ -140,10 +133,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.Javier.client.SpringSecurityClientApplication" />
-        <item itemvalue="Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication" />
         <item itemvalue="Application.com.Javier.oauthserver.OauthAuthorizationServerApplication" />
-        <item itemvalue="Application.SpringSecurityClientApplication" />
-        <item itemvalue="Application.OauthResourceServerApplication" />
+        <item itemvalue="Application.com.Javier.Oauthresourceserver.OauthResourceServerApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -14,10 +14,10 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-
+    private String jenisKelamin;
+    private boolean deleted;
     @Column(length = 60)
     private String password;
-
     private String role;
     private boolean enabled = false;
 }
